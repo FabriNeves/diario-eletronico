@@ -1,0 +1,27 @@
+// Importar o esquema
+
+class crudController {
+
+    static read = (req, res) => {
+
+    }
+
+    static readPorId = (req, res) => {
+
+    }
+    static create = (req, res) => {
+
+    }
+
+    static update = (req, res) => {
+
+    }
+
+    static delete = (req, res) => {
+
+    }
+}
+
+export default crudController;
+
+//  = > crudRoutes.js
