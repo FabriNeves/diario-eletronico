@@ -4,7 +4,6 @@ import crudController from "../controllers/crudController.js";
 
 const router = express.Router();
 
-
            
 router.post("/URI",crudController.create);         //C
 router.get("/URI",crudController.read);            //R
