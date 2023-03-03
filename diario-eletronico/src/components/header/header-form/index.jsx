@@ -1,17 +1,22 @@
 import *as F from './form'
-export default _ =>{
-    return(
+export default _ => {
+    return (
         <F.Formu>
-            <label htmlFor="">Nome do Estabelicimento: </label><br />
-            <input type="text" /><br />
-            <label htmlFor="">Turno:</label><br />
-            <input type="text" /><br />
-            <label htmlFor="">Endereço:</label><br />
-            <input type="text" /><br />
-            <label htmlFor="">Área:</label><br />
-            <input type="text" /><br /> 
-            <label htmlFor="">Ano:</label><br />
-            <input type="text" />
+            <div className="area-input">
+                <input type="text" name='Estabelicimento' placeholder='Nome do Estabelicimento:' className='nomeEstab' />
+                <input type="text" name='Endereço' placeholder='Endereço:' className='endereco' />
+            </div>
+            <select name="Area" id="Area">
+                <option value="Area">Área:</option>
+                <option value="U">Urbana</option>
+                <option value="R">Rural</option>
+            </select>
+            <select name="Turno" id="Turno">
+                <option value="Turno">Turno:</option>
+                <option value="M">Matutinino</option>
+                <option value="V">Vespetino</option>
+            </select>
+            <input type="date" name='' />
         </F.Formu>
     )
 }
