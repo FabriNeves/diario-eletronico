@@ -1,11 +1,12 @@
 import React from "react";
-import Cadastro from "../pages/Cadastro";
+import Header from "../header";
+import Menu from "../header/header-menu";
 
 export default props => {
     return(
         <div>
-            <h1>Home</h1>
-            <Cadastro/>
+            <Header/>
+            <Menu/>
             
         </div>
     )
